@@ -7,30 +7,21 @@ document.addEventListener('DOMContentLoaded', function () {
   function updateHeader() {
     if (!header) return;
     if (header.classList.contains('site-header--static')) return;
-    if (window.scrollY > 40) {
-      header.classList.add('solid');
-    } else {
-      header.classList.remove('solid');
-    }
+    if (window.scrollY > 40) header.classList.add('solid');
+    else header.classList.remove('solid');
   }
   updateHeader();
-  window.addEventListener('scroll', updateHeader);
+  window.addEventListener('scroll', updateHeader, { passive: true });
 
   if (toggle && mobileNav) {
-    toggle.addEventListener('click', function () {
-      mobileNav.classList.add('open');
-    });
+    toggle.addEventListener('click', function () { mobileNav.classList.add('open'); });
   }
   if (mobileClose && mobileNav) {
-    mobileClose.addEventListener('click', function () {
-      mobileNav.classList.remove('open');
-    });
+    mobileClose.addEventListener('click', function () { mobileNav.classList.remove('open'); });
   }
   if (mobileNav) {
     mobileNav.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        mobileNav.classList.remove('open');
-      });
+      a.addEventListener('click', function () { mobileNav.classList.remove('open'); });
     });
   }
 });
