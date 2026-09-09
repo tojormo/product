@@ -10,29 +10,46 @@
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header solid site-header--static" id="siteHeader">
   <div class="site-header__inner">
-    <a href="index.html" class="logo">田結い<span class="sub">TAYUI RICE FARM</span></a>
-    <nav class="nav" id="siteNav">
-      <a href="index.html">ホーム</a>
-      <a href="products.html">商品一覧</a>
-      <a href="about.html">特A地区について</a>
-      <a href="news.html">ニュース</a>
-      <a href="contact.html">お問い合わせ</a>
-      <a href="https://tayui-kome.stores.jp/" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+    <div class="header-left">
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="navlink">ホーム</a>
+      <a href="products.html" class="navlink">商品一覧</a>
+      <a href="about.html" class="navlink">特A地区について</a>
+      <a href="news.html" class="navlink">ニュース</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <a href="contact.html" class="pill-btn">お問い合わせはこちら</a>
+      <a href="https://tayui-kome.stores.jp/" class="pill-btn pill-btn--store" target="_blank" rel="noopener">STORESで購入</a>
+    </div>
   </div>
 </header>
+
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__top">
+    <a href="index.html" class="logo" style="color:var(--color-ink);"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="閉じる">×</button>
+  </div>
+  <a href="index.html">ホーム</a>
+  <a href="products.html">商品一覧</a>
+  <a href="about.html">特A地区について</a>
+  <a href="news.html">ニュース</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="https://tayui-kome.stores.jp/" target="_blank" rel="noopener">STORESで購入</a>
+</div>
 
 <div class="breadcrumb-bar">
   <div class="container"><a href="index.html">ホーム</a> ／ 特定商取引法に基づく表記</div>
 </div>
 
-<section class="section">
+<section class="section section--cream">
   <div class="container">
     <div class="legal-box">
-      <h1 style="font-size:1.6rem;">特定商取引法に基づく表記</h1>
+      <h1 style="font-size:1.5rem;">特定商取引法に基づく表記</h1>
       <p style="color:var(--color-ink-soft);font-size:0.88rem;">
         商品のご購入は、オンラインストア「STORES」上で行われます。ご注文に関する特定商取引法上の表記は、実際の販売ページ（STORES）にも記載されますので、あわせてご確認ください。以下は本サイト運営者に関する表記です。<br>
         ※本サイトはサンプルとして作成されており、下記項目はダミー内容です。公開前に正式な情報へ差し替えてください。

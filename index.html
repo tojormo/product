@@ -13,118 +13,77 @@
 </head>
 <body>
 
-<!-- ===== Header ===== -->
-<header class="site-header">
+<header class="site-header" id="siteHeader">
   <div class="site-header__inner">
-    <a href="index.html" class="logo">田結い<span class="sub">TAYUI RICE FARM</span></a>
-    <nav class="nav" id="siteNav">
-      <a href="index.html" class="current">ホーム</a>
-      <a href="products.html">商品一覧</a>
-      <a href="about.html">特A地区について</a>
-      <a href="news.html">ニュース</a>
-      <a href="contact.html">お問い合わせ</a>
-      <a href="https://tayui-kome.stores.jp/" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+    <div class="header-left">
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="navlink">ホーム</a>
+      <a href="products.html" class="navlink">商品一覧</a>
+      <a href="about.html" class="navlink">特A地区について</a>
+      <a href="news.html" class="navlink">ニュース</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <a href="contact.html" class="pill-btn">お問い合わせはこちら</a>
+      <a href="https://tayui-kome.stores.jp/" class="pill-btn pill-btn--store" target="_blank" rel="noopener">STORESで購入</a>
+    </div>
   </div>
 </header>
 
-<!-- ===== Hero ===== -->
-<section class="hero">
-  <img src="images/hero-field.jpg" alt="特A地区の田んぼ（仮画像）">
-  <div class="hero__content">
-    <span class="hero__eyebrow">TAYUI RICE FARM — 特A地区の食用米</span>
-    <h1>山田錦を育てた大地で、<br>食べるお米をつくる。</h1>
-    <p class="lead">兵庫県・特A地区。山田錦の名産地として知られるこの土地で、私たちは「食べるお米」に向き合っています。品種は、ヒノヒカリとコノホシの2種類。同じ大地の恵みを、日々の食卓へ。</p>
-    <div class="hero__actions">
-      <a href="products.html" class="btn btn--primary">お米を見る</a>
-      <a href="about.html" class="btn btn--outline" style="border-color:#fff;color:#fff;">特A地区について</a>
-    </div>
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__top">
+    <a href="index.html" class="logo" style="color:var(--color-ink);"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="閉じる">×</button>
   </div>
+  <a href="index.html">ホーム</a>
+  <a href="products.html">商品一覧</a>
+  <a href="about.html">特A地区について</a>
+  <a href="news.html">ニュース</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="https://tayui-kome.stores.jp/" target="_blank" rel="noopener">STORESで購入</a>
+</div>
+
+<!-- ===== Hero full-bleed ===== -->
+<section class="hero-full">
+  <img src="images/hero-main.jpg" alt="夕暮れの田んぼと農機（仮画像）">
+  <div class="hero-full__vertical">先人が育てた、この土地で。</div>
+  <div class="hero-full__bottom">
+    <p class="hero-full__tag">先人が残した田んぼで、毎年最善を届ける。</p>
+    <div class="hero-full__logo"><svg width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg>田結い</div>
+  </div>
+  <div class="scroll-cue"></div>
 </section>
 
-<!-- ===== About teaser ===== -->
-<section class="section">
-  <div class="container about-teaser">
-    <div class="about-teaser__img">
-      <img src="images/story-field.jpg" alt="田んぼと稲穂（仮画像）">
-    </div>
-    <div class="about-teaser__text">
-      <span class="eyebrow">ABOUT TAYUI</span>
-      <h2>「酒米の聖地」で、<br>食用米をつくるということ。</h2>
-      <p>兵庫県三木市吉川町、加東市東条町・社町――通称「特A地区」と呼ばれるこの一帯は、酒米の王様「山田錦」の最高峰の産地として知られています。粘土質の土壌、昼夜の大きな寒暖差、長い日照時間。酒米づくりのために磨かれてきたこの環境は、実は「食べるお米」にとっても、またとない好条件です。</p>
-      <p>私たちは、この土地の恵みをそのまま、日々のごはんに。丁寧に育てたヒノヒカリとコノホシを、産地から食卓へお届けします。</p>
-      <a href="about.html" class="btn btn--outline">特A地区についてもっと見る</a>
-    </div>
+<!-- ===== Split full-bleed photo block ===== -->
+<div class="split-photo">
+  <div class="split-photo__cell">
+    <img src="images/farmer.jpg" alt="生産者（仮画像）">
+    <div class="split-photo__text"><h3>受け継ぎ、<br>磨き続ける。</h3></div>
   </div>
-</section>
+  <div class="split-photo__cell">
+    <img src="images/rice-ear-close.jpg" alt="稲穂と青空（仮画像）">
+    <div class="split-photo__text"><h3>山田錦を育てた、<br>その土地で。</h3></div>
+  </div>
+</div>
 
-<!-- ===== Products ===== -->
-<section class="section section--soft" id="products">
+<!-- ===== Feature strip (minimal) ===== -->
+<section class="section--tight section--cream">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">OUR RICE</span>
-      <h2>私たちのお米</h2>
-      <p>兵庫県特A地区で育てる、2つの食用米。それぞれに個性があります。</p>
-    </div>
-    <div class="products-grid">
-
-      <article class="product-card">
-        <div class="product-card__img">
-          <img src="images/hinohikari.jpg" alt="ヒノヒカリ（仮画像）">
-        </div>
-        <div class="product-card__body">
-          <span class="product-card__tag">定番品種</span>
-          <h3>ヒノヒカリ</h3>
-          <span class="product-card__kana">Hinohikari</span>
-          <p class="desc">程よい粘りと上品な甘みで、毎日の食卓に馴染む定番のお米。冷めてもおいしく、和食からお弁当まで幅広く合います。</p>
-          <div class="product-card__actions">
-            <a href="hinohikari.html" class="btn btn--outline btn--sm">詳しく見る</a>
-            <a href="https://tayui-kome.stores.jp/items/hinohikari" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card">
-        <div class="product-card__img">
-          <img src="images/konohoshi.jpg" alt="コノホシ（仮画像）">
-        </div>
-        <div class="product-card__body">
-          <span class="product-card__tag product-card__tag--new">兵庫県オリジナル品種</span>
-          <h3>コノホシ</h3>
-          <span class="product-card__kana">Konohoshi</span>
-          <p class="desc">暑さに強く、粒が大きくつややかな新しいお米。ほどよい粘りと甘みで、冷めてももちもち。おにぎりやお弁当にもおすすめです。</p>
-          <div class="product-card__actions">
-            <a href="konohoshi.html" class="btn btn--outline btn--sm">詳しく見る</a>
-            <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===== Features ===== -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">OUR COMMITMENT</span>
-      <h2>特A地区で育てる、ということ。</h2>
-    </div>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="feature-card__icon">土</div>
+    <div class="feature-strip">
+      <div class="feature-strip__item">
+        <span class="feature-strip__num">01</span>
         <h4>肥沃な粘土質の土壌</h4>
         <p>養分と水分の保持力が高い粘土質の土壌が、稲にじっくりと旨みを蓄えさせます。</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">寒</div>
+      <div class="feature-strip__item">
+        <span class="feature-strip__num">02</span>
         <h4>昼夜の大きな寒暖差</h4>
         <p>日較差10℃以上ともいわれるこの土地の気候が、甘みと粒の張りを引き出します。</p>
       </div>
-      <div class="feature-card">
-        <div class="feature-card__icon">精</div>
+      <div class="feature-strip__item">
+        <span class="feature-strip__num">03</span>
         <h4>丁寧な栽培と精米管理</h4>
         <p>栽培から精米まで一貫して管理し、精米したてのおいしさをお届けします。</p>
       </div>
@@ -132,32 +91,88 @@
   </div>
 </section>
 
-<!-- ===== Area ===== -->
-<section class="section section--soft">
-  <div class="container area-block">
-    <div class="area-block__img">
-      <img src="images/area-field.jpg" alt="特A地区の里山風景（仮画像）">
-    </div>
-    <div>
-      <span class="eyebrow">ABOUT THE AREA</span>
-      <h2>特A地区とは</h2>
-      <p style="color:var(--color-ink-soft)">兵庫県三木市吉川町、加東市東条町・社町一帯は、山田錦の産地の中でも最上級に格付けされる「特A地区」。良質な酒米を育んできた土壌と気候が、私たちの食用米づくりの土台にもなっています。</p>
-      <ul class="area-list">
-        <li><strong>所在地</strong>兵庫県三木市吉川町／加東市東条町・社町</li>
-        <li><strong>地形</strong>山間の棚田地帯、標高のある谷あいの田んぼ</li>
-        <li><strong>土壌</strong>養分・水分の保持力が高い粘土質</li>
-        <li><strong>気候</strong>瀬戸内海式気候。昼夜の寒暖差が大きい</li>
-      </ul>
-      <a href="about.html" class="btn btn--outline" style="margin-top:24px;">特A地区について詳しく見る</a>
+<!-- ===== Area banner full-bleed ===== -->
+<section class="banner-photo">
+  <img src="images/aerial-fields.jpg" alt="特A地区の里山風景（仮画像）">
+  <div class="banner-photo__inner">
+    <div class="banner-photo__box">
+      <span class="eyebrow">About the area</span>
+      <h2>「酒米の聖地」<br>特A地区という土地。</h2>
+      <p>兵庫県三木市吉川町、加東市東条町・社町――山田錦の最高峰の産地として知られるこの一帯で、私たちは食用米を育てています。良質な酒米を育んできた土壌と気候が、日々の食卓のための米づくりの土台になっています。</p>
+      <a href="about.html" class="btn btn--light">特A地区について詳しく見る</a>
     </div>
   </div>
 </section>
 
-<!-- ===== News ===== -->
-<section class="section">
+<!-- ===== Product showcase (image dominant) ===== -->
+<section class="product-showcase">
+
+  <div class="product-block">
+    <div class="product-block__img">
+      <img src="images/bowl-rice.jpg" alt="ヒノヒカリ（仮画像）">
+    </div>
+    <div class="product-block__text">
+      <span class="tag">定番品種</span>
+      <h3>ヒノヒカリ</h3>
+      <span class="kana">Hinohikari</span>
+      <p class="desc">程よい粘りと上品な甘みで、毎日の食卓に馴染む定番のお米。冷めてもおいしく、和食からお弁当まで幅広く合います。</p>
+      <div class="product-block__actions">
+        <a href="hinohikari.html" class="btn btn--outline btn--sm">詳しく見る</a>
+        <a href="https://tayui-kome.stores.jp/items/hinohikari" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-block reverse">
+    <div class="product-block__img">
+      <img src="images/grain-macro.jpg" alt="コノホシ（仮画像）">
+    </div>
+    <div class="product-block__text">
+      <span class="tag">兵庫県オリジナル品種</span>
+      <h3>コノホシ</h3>
+      <span class="kana">Konohoshi</span>
+      <p class="desc">暑さに強く、粒が大きくつややかな新しいお米。ほどよい粘りと甘みで、冷めてももちもち。おにぎりやお弁当にもおすすめです。</p>
+      <div class="product-block__actions">
+        <a href="konohoshi.html" class="btn btn--outline btn--sm">詳しく見る</a>
+        <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ===== Photo mosaic gallery ===== -->
+<section class="section section--cream">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow">NEWS</span>
+      <span class="eyebrow">Scenes</span>
+      <h2>田んぼの、四季と時間。</h2>
+    </div>
+  </div>
+  <div class="mosaic">
+    <div class="mosaic-item span-2">
+      <img src="images/misty-fields.jpg" alt="霧の朝の田んぼ（仮画像）">
+    </div>
+    <div class="mosaic-item">
+      <img src="images/hands-grain.jpg" alt="手のひらの籾（仮画像）">
+    </div>
+    <div class="mosaic-item">
+      <img src="images/sunset-reflection.jpg" alt="夕焼けの水鏡（仮画像）">
+    </div>
+    <div class="mosaic-item">
+      <img src="images/harvest-combine.jpg" alt="稲刈りの様子（仮画像）">
+    </div>
+    <div class="mosaic-item span-2">
+      <img src="images/hero-main.jpg" alt="夕暮れの田んぼ（仮画像）">
+    </div>
+  </div>
+</section>
+
+<!-- ===== News (minimal) ===== -->
+<section class="section--tight section--soft">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">News</span>
       <h2>お知らせ</h2>
     </div>
     <div class="news-list">
@@ -183,16 +198,17 @@
   </div>
 </section>
 
-<!-- ===== CTA ===== -->
-<section class="cta-band">
-  <div class="container">
+<!-- ===== CTA photo band ===== -->
+<section class="cta-photo">
+  <img src="images/harvest-combine.jpg" alt="稲刈りの夕暮れ（仮画像）">
+  <div class="container cta-photo__inner">
+    <span class="eyebrow" style="color:#e9cf9a;">Online Store</span>
     <h2>オンラインストア（STORES）でお求めください</h2>
     <p>田結いのお米は、産地直送のオンラインストアにて販売しております。精米したてのお米を、産地から直接お届けします。</p>
     <a href="https://tayui-kome.stores.jp/" class="btn btn--store" target="_blank" rel="noopener">STORESストアを見る</a>
   </div>
 </section>
 
-<!-- ===== Footer ===== -->
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">

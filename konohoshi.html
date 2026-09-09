@@ -11,50 +11,60 @@
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header solid site-header--static" id="siteHeader">
   <div class="site-header__inner">
-    <a href="index.html" class="logo">田結い<span class="sub">TAYUI RICE FARM</span></a>
-    <nav class="nav" id="siteNav">
-      <a href="index.html">ホーム</a>
-      <a href="products.html" class="current">商品一覧</a>
-      <a href="about.html">特A地区について</a>
-      <a href="news.html">ニュース</a>
-      <a href="contact.html">お問い合わせ</a>
-      <a href="https://tayui-kome.stores.jp/" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+    <div class="header-left">
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="navlink">ホーム</a>
+      <a href="products.html" class="navlink">商品一覧</a>
+      <a href="about.html" class="navlink">特A地区について</a>
+      <a href="news.html" class="navlink">ニュース</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <a href="contact.html" class="pill-btn">お問い合わせはこちら</a>
+      <a href="https://tayui-kome.stores.jp/" class="pill-btn pill-btn--store" target="_blank" rel="noopener">STORESで購入</a>
+    </div>
   </div>
 </header>
 
-<section class="page-hero">
-  <img src="images/konohoshi.jpg" alt="コノホシ（仮画像）">
-  <div class="container page-hero__inner">
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__top">
+    <a href="index.html" class="logo" style="color:var(--color-ink);"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="閉じる">×</button>
+  </div>
+  <a href="index.html">ホーム</a>
+  <a href="products.html">商品一覧</a>
+  <a href="about.html">特A地区について</a>
+  <a href="news.html">ニュース</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="https://tayui-kome.stores.jp/" target="_blank" rel="noopener">STORESで購入</a>
+</div>
+
+<section class="page-banner">
+  <img src="images/grain-macro.jpg" alt="コノホシ（仮画像）">
+  <div class="page-banner__inner">
     <p class="breadcrumb"><a href="index.html">ホーム</a> ／ <a href="products.html">商品一覧</a> ／ コノホシ</p>
     <h1>コノホシ</h1>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
+<div class="split-photo" style="grid-template-columns:1fr;">
+  <div class="split-photo__cell" style="aspect-ratio:16/8;">
+    <img src="images/rice-ear-close.jpg" alt="稲穂と青空（仮画像）">
+    <div class="split-photo__text"><h3>暑さに負けない、<br>粒が大きくつややかな新しいお米。</h3></div>
+  </div>
+</div>
 
-    <div class="two-col-img-text">
-      <div class="img-col"><img src="images/konohoshi.jpg" alt="コノホシ（仮画像）"></div>
-      <div>
-        <span class="eyebrow">兵庫県オリジナル品種 / KONOHOSHI</span>
-        <h2>暑さに負けない、<br>粒が大きくつややかな新しいお米。</h2>
-        <p>コノホシは、兵庫県とJAグループ兵庫が約9年をかけて育成した兵庫県オリジナルの水稲品種です。近年の猛暑による品質低下という課題に向き合い、高温耐性に優れた品種と食味の良い品種を交配して生まれました。</p>
-        <p>粒が大きくつややかで、ほどよい粘りと甘みがあり、冷めてももちもちとした食感が続くのが特長です。おかずとの相性もよく、おにぎりやお弁当にも向いています。特A地区の恵まれた土壌と気候で育てることで、その持ち味がより引き立ちます。</p>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:20px;">
-          <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store" target="_blank" rel="noopener">STORESで購入する</a>
-          <a href="hinohikari.html" class="btn btn--outline">ヒノヒカリも見る</a>
-        </div>
-      </div>
-    </div>
+<section class="section section--cream">
+  <div class="container container--narrow prose">
+    <span class="eyebrow">兵庫県オリジナル品種 / KONOHOSHI</span>
+    <p>コノホシは、兵庫県とJAグループ兵庫が約9年をかけて育成した兵庫県オリジナルの水稲品種です。近年の猛暑による品質低下という課題に向き合い、高温耐性に優れた品種と食味の良い品種を交配して生まれました。</p>
+    <p>粒が大きくつややかで、ほどよい粘りと甘みがあり、冷めてももちもちとした食感が続くのが特長です。おかずとの相性もよく、おにぎりやお弁当にも向いています。特A地区の恵まれた土壌と気候で育てることで、その持ち味がより引き立ちます。</p>
 
-    <div class="section-head">
-      <span class="eyebrow">SPEC</span>
-      <h2>商品情報</h2>
-    </div>
+    <h2>商品情報</h2>
     <table class="spec-table">
       <tr><th>品種</th><td>コノホシ（兵庫県オリジナル品種）</td></tr>
       <tr><th>産地</th><td>兵庫県特A地区（三木市吉川町／加東市東条町・社町）</td></tr>
@@ -63,12 +73,21 @@
       <tr><th>ご購入方法</th><td>オンラインストア（STORES）にて販売しております</td></tr>
     </table>
 
-    <div style="text-align:center;">
-      <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store" target="_blank" rel="noopener">STORESでコノホシを購入する</a>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;">
+      <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store" target="_blank" rel="noopener">STORESで購入する</a>
+      <a href="hinohikari.html" class="btn btn--outline">ヒノヒカリも見る</a>
     </div>
-
   </div>
 </section>
+
+<div class="split-photo">
+  <div class="split-photo__cell">
+    <img src="images/harvest-combine.jpg" alt="稲刈りの様子（仮画像）">
+  </div>
+  <div class="split-photo__cell">
+    <img src="images/aerial-fields.jpg" alt="特A地区の田園風景（仮画像）">
+  </div>
+</div>
 
 <footer class="site-footer">
   <div class="container">

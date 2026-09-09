@@ -11,76 +11,85 @@
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header solid site-header--static" id="siteHeader">
   <div class="site-header__inner">
-    <a href="index.html" class="logo">田結い<span class="sub">TAYUI RICE FARM</span></a>
-    <nav class="nav" id="siteNav">
-      <a href="index.html">ホーム</a>
-      <a href="products.html" class="current">商品一覧</a>
-      <a href="about.html">特A地区について</a>
-      <a href="news.html">ニュース</a>
-      <a href="contact.html">お問い合わせ</a>
-      <a href="https://tayui-kome.stores.jp/" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+    <div class="header-left">
+      <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+      <a href="index.html" class="logo"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    </div>
+    <nav class="header-nav">
+      <a href="index.html" class="navlink">ホーム</a>
+      <a href="products.html" class="navlink">商品一覧</a>
+      <a href="about.html" class="navlink">特A地区について</a>
+      <a href="news.html" class="navlink">ニュース</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
+    <div class="header-right">
+      <a href="contact.html" class="pill-btn">お問い合わせはこちら</a>
+      <a href="https://tayui-kome.stores.jp/" class="pill-btn pill-btn--store" target="_blank" rel="noopener">STORESで購入</a>
+    </div>
   </div>
 </header>
 
-<section class="page-hero">
-  <img src="images/grain-closeup.jpg" alt="お米粒（仮画像）">
-  <div class="container page-hero__inner">
+<div class="mobile-nav" id="mobileNav">
+  <div class="mobile-nav__top">
+    <a href="index.html" class="logo" style="color:var(--color-ink);"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>田結い</span></a>
+    <button class="mobile-nav__close" id="mobileNavClose" aria-label="閉じる">×</button>
+  </div>
+  <a href="index.html">ホーム</a>
+  <a href="products.html">商品一覧</a>
+  <a href="about.html">特A地区について</a>
+  <a href="news.html">ニュース</a>
+  <a href="contact.html">お問い合わせ</a>
+  <a href="https://tayui-kome.stores.jp/" target="_blank" rel="noopener">STORESで購入</a>
+</div>
+
+<section class="page-banner">
+  <img src="images/grain-macro.jpg" alt="お米粒（仮画像）">
+  <div class="page-banner__inner">
     <p class="breadcrumb"><a href="index.html">ホーム</a> ／ 商品一覧</p>
     <h1>商品一覧</h1>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">OUR RICE</span>
-      <h2>特A地区で育てる、2つの食用米</h2>
-      <p>兵庫県三木市吉川町、加東市東条町・社町――山田錦の名産地「特A地区」で育てるお米です。ご購入はオンラインストア（STORES）にて承っております。</p>
+<section class="product-showcase">
+
+  <div class="product-block">
+    <div class="product-block__img">
+      <img src="images/bowl-rice.jpg" alt="ヒノヒカリ（仮画像）">
     </div>
-    <div class="products-grid">
-
-      <article class="product-card">
-        <div class="product-card__img">
-          <img src="images/hinohikari.jpg" alt="ヒノヒカリ（仮画像）">
-        </div>
-        <div class="product-card__body">
-          <span class="product-card__tag">定番品種</span>
-          <h3>ヒノヒカリ</h3>
-          <span class="product-card__kana">Hinohikari</span>
-          <p class="desc">程よい粘りと上品な甘みで、毎日の食卓に馴染む定番のお米。冷めてもおいしく、和食からお弁当まで幅広く合います。</p>
-          <div class="product-card__actions">
-            <a href="hinohikari.html" class="btn btn--outline btn--sm">詳しく見る</a>
-            <a href="https://tayui-kome.stores.jp/items/hinohikari" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="product-card">
-        <div class="product-card__img">
-          <img src="images/konohoshi.jpg" alt="コノホシ（仮画像）">
-        </div>
-        <div class="product-card__body">
-          <span class="product-card__tag product-card__tag--new">兵庫県オリジナル品種</span>
-          <h3>コノホシ</h3>
-          <span class="product-card__kana">Konohoshi</span>
-          <p class="desc">暑さに強く、粒が大きくつややかな新しいお米。ほどよい粘りと甘みで、冷めてももちもち。おにぎりやお弁当にもおすすめです。</p>
-          <div class="product-card__actions">
-            <a href="konohoshi.html" class="btn btn--outline btn--sm">詳しく見る</a>
-            <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
-          </div>
-        </div>
-      </article>
-
+    <div class="product-block__text">
+      <span class="tag">定番品種</span>
+      <h3>ヒノヒカリ</h3>
+      <span class="kana">Hinohikari</span>
+      <p class="desc">程よい粘りと上品な甘みで、毎日の食卓に馴染む定番のお米。冷めてもおいしく、和食からお弁当まで幅広く合います。</p>
+      <div class="product-block__actions">
+        <a href="hinohikari.html" class="btn btn--outline btn--sm">詳しく見る</a>
+        <a href="https://tayui-kome.stores.jp/items/hinohikari" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+      </div>
     </div>
   </div>
+
+  <div class="product-block reverse">
+    <div class="product-block__img">
+      <img src="images/grain-macro.jpg" alt="コノホシ（仮画像）">
+    </div>
+    <div class="product-block__text">
+      <span class="tag">兵庫県オリジナル品種</span>
+      <h3>コノホシ</h3>
+      <span class="kana">Konohoshi</span>
+      <p class="desc">暑さに強く、粒が大きくつややかな新しいお米。ほどよい粘りと甘みで、冷めてももちもち。おにぎりやお弁当にもおすすめです。</p>
+      <div class="product-block__actions">
+        <a href="konohoshi.html" class="btn btn--outline btn--sm">詳しく見る</a>
+        <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+      </div>
+    </div>
+  </div>
+
 </section>
 
-<section class="cta-band">
-  <div class="container">
+<section class="cta-photo">
+  <img src="images/sunset-reflection.jpg" alt="夕焼けの田んぼ（仮画像）">
+  <div class="container cta-photo__inner">
     <h2>オンラインストア（STORES）でお求めください</h2>
     <p>ご注文・お支払い・配送はすべてオンラインストア（STORES）にて承っております。</p>
     <a href="https://tayui-kome.stores.jp/" class="btn btn--store" target="_blank" rel="noopener">STORESストアを見る</a>
