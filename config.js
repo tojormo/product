@@ -1,0 +1,19 @@
+/* =========================================================
+   とうじょう米 - サイト共通設定ファイル
+   ---------------------------------------------------------
+   STORES（オンラインストア）のリンクはこのファイルで一元管理します。
+   URL を変更するときは、このファイルの値だけを書き換えてください。
+   （各 HTML を編集する必要はありません）
+   ========================================================= */
+window.SITE_CONFIG = {
+  stores: {
+    /* オンラインストア（STORES）のトップページ URL */
+    base: "https://tayui-kome.stores.jp/",
+
+    /* 各商品の購入ページ URL（キー = data-store 属性の値） */
+    items: {
+      hinohikari: "https://tayui-kome.stores.jp/items/hinohikari",
+      konohoshi:  "https://tayui-kome.stores.jp/items/konohoshi"
+    }
+  }
+};

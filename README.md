@@ -12,7 +12,6 @@ tojo-kome/
 ├── hinohikari.html     … ヒノヒカリ 商品ページ
 ├── konohoshi.html      … コノホシ 商品ページ
 ├── about.html          … 特A地区について
-├── news.html           … ニュース
 ├── contact.html        … お問い合わせ
 ├── legal.html          … 利用規約・プライバシー・特商法表記
 ├── css/
@@ -45,16 +44,16 @@ window.SITE_CONFIG = {
 各HTML側はプレースホルダーを置くだけです。
 
 ```html
-<div id="site-header" data-current="news" data-variant="solid"></div>
+<div id="site-header" data-current="products" data-variant="solid"></div>
    ... 本文 ...
 <div id="site-footer"></div>
 <script src="js/config.js"></script>
 <script src="js/main.js"></script>
 ```
 
-- `data-current` … ナビの現在地ハイライト（home / products / about / news）
-- `data-variant` … `hero`＝透過ヘッダー（トップ用）、省略時＝不透明固定（下層ページ用）
-- `data-image-note="false"`（フッター）… 「掲載写真は仮画像です」の注記を非表示
+- data-current … ナビの現在地ハイライト（home / products / about）
+- data-variant … hero＝透過ヘッダー（トップ用）、省略時＝不透明固定（下層ページ用）
+- data-image-note="false"（フッター）… 「掲載写真は仮画像です」の注記を非表示
 
 ## 公開方法
 
