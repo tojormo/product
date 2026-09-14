@@ -12,36 +12,8 @@
 <meta property="og:image" content="images/og-image.jpg">
 </head>
 <body>
-
-<header class="site-header" id="siteHeader">
-  <div class="site-header__inner">
-    <div class="header-left">
-      <button class="nav-toggle" id="navToggle" aria-label="メニュー"><span></span><span></span><span></span></button>
-      <a href="index.html" class="logo"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>とうじょう米</span></a>
-    </div>
-    <nav class="header-nav">
-      <a href="index.html" class="navlink">ホーム</a>
-      <a href="products.html" class="navlink">商品一覧</a>
-      <a href="about.html" class="navlink">特A地区について</a>
-    </nav>
-    <div class="header-right">
-      <a href="contact.html" class="pill-btn">お問い合わせはこちら</a>
-      <a href="https://tayui-kome.stores.jp/" class="pill-btn pill-btn--store" target="_blank" rel="noopener">STORESで購入</a>
-    </div>
-  </div>
-</header>
-
-<div class="mobile-nav" id="mobileNav">
-  <div class="mobile-nav__top">
-    <a href="index.html" class="logo" style="color:var(--color-ink);"><svg class="logo-mark" width="24" height="24" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>とうじょう米</span></a>
-    <button class="mobile-nav__close" id="mobileNavClose" aria-label="閉じる">×</button>
-  </div>
-  <a href="index.html">ホーム</a>
-  <a href="products.html">商品一覧</a>
-  <a href="about.html">特A地区について</a>
-  <a href="contact.html">お問い合わせ</a>
-  <a href="https://tayui-kome.stores.jp/" target="_blank" rel="noopener">STORESで購入</a>
-</div>
+<!-- ===== 共通ヘッダー（js/main.js が生成） ===== -->
+<div id="site-header" data-current="home" data-variant="hero"></div>
 
 <!-- ===== HERO ===== -->
 <section class="hero-full">
@@ -53,7 +25,6 @@
   </div>
   <div class="scroll-cue"></div>
 </section>
-
 <!-- ===== SPLIT PHOTO ===== -->
 <div class="split-photo">
   <div class="split-photo__cell">
@@ -65,7 +36,6 @@
     <div class="split-photo__text"><h3>山田錦を育てる、<br>テロワール</h3></div>
   </div>
 </div>
-
 <!-- ===== FEATURE STRIP ===== -->
 <section class="section--tight section--cream">
   <div class="container">
@@ -88,7 +58,6 @@
     </div>
   </div>
 </section>
-
 <!-- ===== AREA BANNER ===== -->
 <section class="banner-photo">
   <img src="images/aerial-fields.jpg" alt="特A地区の里山風景（仮画像）">
@@ -101,7 +70,6 @@
     </div>
   </div>
 </section>
-
 <!-- ===== STORY ===== -->
 <section class="section section--soft">
   <div class="container container--narrow prose" style="text-align:center;">
@@ -113,7 +81,6 @@
     </div>
   </div>
 </section>
-
 <!-- ===== PRODUCTS ===== -->
 <section class="product-showcase">
   <div class="product-block">
@@ -125,7 +92,7 @@
       <p class="desc">程よい粘りと上品な甘みで、毎日の食卓に馴染む定番のお米。冷めてもおいしく、和食からお弁当まで幅広く合います。</p>
       <div class="product-block__actions">
         <a href="hinohikari.html" class="btn btn--outline btn--sm">詳しく見る</a>
-        <a href="https://tayui-kome.stores.jp/items/hinohikari" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+        <a data-store="hinohikari" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
       </div>
     </div>
   </div>
@@ -138,12 +105,11 @@
       <p class="desc">暑さに強く、粒が大きくつややかな新しいお米。ほどよい粘りと甘みで、冷めてももちもち。おにぎりやお弁当にもおすすめです。</p>
       <div class="product-block__actions">
         <a href="konohoshi.html" class="btn btn--outline btn--sm">詳しく見る</a>
-        <a href="https://tayui-kome.stores.jp/items/konohoshi" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
+        <a data-store="konohoshi" class="btn btn--store btn--sm" target="_blank" rel="noopener">STORESで購入</a>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ===== MOSAIC ===== -->
 <section class="section section--cream">
   <div class="container">
@@ -159,7 +125,6 @@
     <a class="mosaic-item span-2" href="about.html"><img src="images/harvest-combine.jpg" alt="稲刈りの様子（仮画像）"></a>
   </div>
 </section>
-  
 <!-- ===== CTA ===== -->
 <section class="cta-photo">
   <img src="images/harvest-combine.jpg" alt="稲刈りの夕暮れ（仮画像）">
@@ -167,47 +132,14 @@
     <span class="eyebrow" style="color:#e9cf9a;">Online Store</span>
     <h2>オンラインストア（STORES）でお求めください</h2>
     <p>とうじょう米は、産地直送のオンラインストアにて販売しております。精米したてのお米を、産地から直接お届けします。</p>
-    <a href="https://tayui-kome.stores.jp/" class="btn btn--store" target="_blank" rel="noopener">STORESストアを見る</a>
+    <a data-store="base" class="btn btn--store" target="_blank" rel="noopener">STORESストアを見る</a>
   </div>
 </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-logo"><svg class="logo-mark" width="22" height="22" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="13" cy="13" r="11.5" stroke="currentColor" stroke-width="1.2"/><path d="M13 4V22M4 13H22M6.5 6.5L19.5 19.5M19.5 6.5L6.5 19.5" stroke="currentColor" stroke-width="1"/><circle cx="13" cy="13" r="3" fill="currentColor"/></svg><span>とうじょう米</span></div>
-        <p>兵庫県特A地区で育てる食用米ブランド。ヒノヒカリとコノホシを、産地から食卓へ。</p>
-      </div>
-      <div class="footer-col">
-        <h5>商品</h5>
-        <ul>
-          <li><a href="hinohikari.html">ヒノヒカリ</a></li>
-          <li><a href="konohoshi.html">コノホシ</a></li>
-          <li><a href="https://tayui-kome.stores.jp/" target="_blank" rel="noopener">オンラインストア（STORES）</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>サイト</h5>
-        <ul>
-          <li><a href="about.html">特A地区について</a></li>
-          <li><a href="news.html">ニュース</a></li>
-          <li><a href="contact.html">お問い合わせ</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h5>規約・法令</h5>
-        <ul>
-          <li><a href="legal.html">利用規約・プライバシー</a></li>
-          <li><a href="legal.html#tokushoho">特定商取引法に基づく表記</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>Copyright © 2026 とうじょう米. All Rights Reserved.</span>
-    </div>
-  </div>
-</footer>
+<!-- ===== 共通フッター（js/main.js が生成 / トップは仮画像注記なし） ===== -->
+<div id="site-footer" data-image-note="false"></div>
 
+<script src="js/config.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
