@@ -8,12 +8,12 @@
 window.SITE_CONFIG = {
   stores: {
     /* オンラインストア（STORES）のトップページ URL */
-    base: "https://tojormo.stores.jp/",
+    base: "https://tayui-kome.stores.jp/",
 
     /* 各商品の購入ページ URL（キー = data-store 属性の値） */
     items: {
-      hinohikari: "https://tojormo.stores.jp/",
-      konohoshi:  "https://tojormo.stores.jp/"
+      hinohikari: "https://tayui-kome.stores.jp/items/hinohikari",
+      konohoshi:  "https://tayui-kome.stores.jp/items/konohoshi"
     }
   }
 };

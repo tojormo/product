@@ -6,13 +6,13 @@
    - ヘッダーのスクロール挙動・モバイルメニュー開閉も担当します。
 
    各 HTML 側の使い方:
-     <div id="site-header" data-current="news" data-variant="solid"></div>
+     <div id="site-header" data-current="products" data-variant="solid"></div>
         ... ページ本文 ...
      <div id="site-footer"></div>
      <script src="js/config.js"></script>
      <script src="js/main.js"></script>
 
-   data-current : ナビの現在地ハイライト（home / products / about / news）
+   data-current : ナビの現在地ハイライト（home / products / about）
    data-variant : ヘッダーの見た目
                     "hero"  = 透過（トップページ用・スクロールで背景表示）
                     省略/他 = 不透明で固定（下層ページ用）
@@ -44,8 +44,7 @@
   var NAV_ITEMS = [
     { key: "home",     href: "index.html",    label: "ホーム" },
     { key: "products", href: "products.html", label: "商品一覧" },
-    { key: "about",    href: "about.html",    label: "特A地区について" },
-    { key: "news",     href: "news.html",     label: "ニュース" }
+    { key: "about",    href: "about.html",    label: "特A地区について" }
   ];
 
   /* ---- ヘッダー ---- */
@@ -116,7 +115,6 @@
             '<h5>サイト</h5>' +
             '<ul>' +
               '<li><a href="about.html">特A地区について</a></li>' +
-              '<li><a href="news.html">ニュース</a></li>' +
               '<li><a href="contact.html">お問い合わせ</a></li>' +
             '</ul>' +
           '</div>' +
